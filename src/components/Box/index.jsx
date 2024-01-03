@@ -30,7 +30,7 @@ const Box = () => {
           Decrementar
         </button>
         <button
-          className="px-4 py-1 rounded-lg bg-black text-white hover:opacity-80"
+          className="px-4 py-1 rounded-lg bg-slate-700 text-white hover:opacity-80"
           onClick={() => dispatch(incrementByAmount(5))}
         >
           +5
