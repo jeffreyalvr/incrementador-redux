@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div className="flex flex-col gap-4 pb-8 w-full h-auto m-0 sm:m-10 sm:mx-auto sm:w-[500px]">
+    <div className="flex flex-col gap-4 pb-8 w-full h-auto m-0 sm:m-10 sm:mx-auto sm:w-[500px] sm:gap-8">
       <Box />
       <Footer />
     </div>
