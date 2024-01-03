@@ -1,5 +1,9 @@
 import { useSelector, useDispatch } from "react-redux";
-import { increment, decrement } from "../../state/counter/counterSlice";
+import {
+  increment,
+  decrement,
+  incrementByAmount,
+} from "../../state/counter/counterSlice";
 
 const Box = () => {
   const counter = useSelector((state) => state.counter.value);
@@ -24,6 +28,12 @@ const Box = () => {
           onClick={() => dispatch(decrement())}
         >
           Decrementar
+        </button>
+        <button
+          className="px-4 py-1 rounded-lg bg-black text-white hover:opacity-80"
+          onClick={() => dispatch(incrementByAmount(5))}
+        >
+          +5
         </button>
       </div>
     </div>
